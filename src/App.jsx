@@ -1,5 +1,5 @@
 const App = () => {
-  const playListTitle = "My cool playlist";
+  const playListTitle = "Cool playlist";
   const songs = [
     {
       id: 1,
@@ -45,10 +45,20 @@ const App = () => {
     Sledgehammer: 11,
   };
   const currentlyPlaying = 0;
+  const songDetails = songs.map((song, index) => (
+    <li key={index}>
+      <h2>{song.title}</h2>
+      <p>{song.artist}</p>
+      <img src={song.previewURL} alt={`${song.title} cover`}/>
+    </li>
+  ))
 
   return (
     <div className="App">
-      <h1>React Intro</h1>
+      <h1>{playListTitle}</h1>
+      <ol>
+        {songDetails}
+      </ol>
     </div>
   );
 };
