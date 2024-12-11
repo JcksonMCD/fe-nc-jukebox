@@ -1,5 +1,5 @@
 const App = () => {
-  const playListTitle = "Cool playlist";
+  const playListTitle = <h1>"Cool playlist</h1>;
   const songs = [
     {
       id: 1,
@@ -49,7 +49,7 @@ const App = () => {
     <li className="song-item" key={index}>
       <h2>{song.title}</h2>
       <p>{song.artist}</p>
-      <img className="song-image" src={song.previewURL} alt={`${song.title} cover`}/>
+      <img className="song-image" src={song.albumCover} alt={`${song.title} cover`}/>
     </li>
   ))
 
