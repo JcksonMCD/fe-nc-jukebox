@@ -1,5 +1,5 @@
 const App = () => {
-  const playListTitle = <h1>"Cool playlist</h1>;
+  const playListTitle = <h1>Cool playlist</h1>;
   const songs = [
     {
       id: 1,

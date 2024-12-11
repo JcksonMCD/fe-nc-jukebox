@@ -3,7 +3,8 @@
 body {
   margin: 0;
   font-family: 'Zilla Slab', serif;
-  background-color: #fbeaff;
+  background-color: #f7f0ff;
+  color: #333;
 }
 
 .App {
