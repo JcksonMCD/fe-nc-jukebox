@@ -1,3 +1,5 @@
+import Header from "./Header";
+
 const App = () => {
   const playListTitle = "Cool playlist";
   const songs = [
@@ -55,7 +57,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>{playListTitle}</h1>
+      <Header playListTitle={playListTitle} /> 
       <ol className="song-list">
         {songDetails}
       </ol>
