@@ -15,6 +15,7 @@ body {
 }
 
 button {
+  background: linear-gradient(45deg, #845ec2, #00c9a7);
   background: #00c9a7;
   color: white;
   padding: 0.4em 1em;
