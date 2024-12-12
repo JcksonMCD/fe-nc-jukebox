@@ -48,6 +48,7 @@ const App = () => {
     Sledgehammer: 11,
   };
 
+  const currentlyPlaying = 0;
   const songDetails = songs.map((song, index) => (
     <li className="song-item" key={song.id}>
       <h2>{song.title}</h2>

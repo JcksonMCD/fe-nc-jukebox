@@ -3,13 +3,13 @@
 body {
   margin: 0;
   font-family: 'Zilla Slab', serif;
-  background-color: #f7f0ff;
+  background-color: #2a2858;
   color: #333;
 }
 
 .App {
   text-align: center;
-  color: #845ec2;
+  color: #ffffff;
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -64,7 +64,7 @@ button:disabled {
 
 .song-item > h2 {
   margin: 0.5em 0;
-  color: #845ec2;
+  color: #2c3081;
   font-size: 1.2rem;
 }
 
