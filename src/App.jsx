@@ -49,22 +49,11 @@ const App = () => {
   };
 
   const currentlyPlaying = 0;
-  const songDetails = songs.map((song, index) => (
-    <li className="song-item" key={song.id}>
-      <h2>{song.title}</h2>
-      <p>{song.artist}</p>
-      <img
-        className="song-image"
-        src={song.albumCover}
-        alt={`${song.title} cover`}
-      />
-    </li>
-  ));
 
   return (
     <div className="App">
       <Header playListTitle={playListTitle} /> 
-      <Song songDetails={songDetails}></Song>
+      <Song songs={songs} currentlyPlaying={currentlyPlaying}></Song>
     </div>
   );
 };
