@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Song from "./Songs";
 
 const App = () => {
   const playListTitle = "Cool playlist";
@@ -46,21 +47,23 @@ const App = () => {
     "Don't stop me now": 8,
     Sledgehammer: 11,
   };
-  const currentlyPlaying = 0;
+
   const songDetails = songs.map((song, index) => (
-    <li className="song-item" key={index}>
+    <li className="song-item" key={song.id}>
       <h2>{song.title}</h2>
       <p>{song.artist}</p>
-      <img className="song-image" src={song.albumCover} alt={`${song.title} cover`}/>
+      <img
+        className="song-image"
+        src={song.albumCover}
+        alt={`${song.title} cover`}
+      />
     </li>
-  ))
+  ));
 
   return (
     <div className="App">
       <Header playListTitle={playListTitle} /> 
-      <ol className="song-list">
-        {songDetails}
-      </ol>
+      <Song songDetails={songDetails}></Song>
     </div>
   );
 };
