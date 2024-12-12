@@ -17,7 +17,7 @@ const Song = ({ songs, currentlyPlaying }) => {
             src={song.albumCover}
             alt={`${song.title} cover`}
           />
-          {index === currentlyPlaying && <p className="now-playing">Now Playing</p>}
+          {index === currentlyPlaying && <p className="song-current">Now Playing</p>}
         </li>
       ))}
     </ol>
